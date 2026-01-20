@@ -1,28 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>Artists – ArtGift</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f6fa;
+    color:#333;
+}
+header{
+    background:linear-gradient(135deg,#1e272e,#485460);
+    color:white;
+    padding:30px;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+.section{
+    padding:50px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    padding:20px;
+    text-align:center;
+}
+.card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+}
+.btn{
+    display:inline-block;
+    background:#ff6b6b;
+    color:white;
+    padding:10px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    margin-top:15px;
+}
+footer{
+    background:#1e272e;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <nav style="display:flex;justify-content:space-between;align-items:center;padding:20px;background:#1e272e;color:white;">
-    <h2>🎨 ArtGift</h2>
-    <div>
-      <a href="index.html" style="color:white;margin-right:15px;">Home</a>
-      <a href="artists.html" style="color:white;margin-right:15px;">Artists</a>
-      <a href="order.html" style="color:white;margin-right:15px;">Order</a>
-      <a href="contact.html" style="color:white;">Contact</a>
-    </div>
-  </nav>
+<nav>
+<h2><i class="fa-solid fa-palette"></i> ArtGift</h2>
+<div>
+<a href="index.html">Home</a>
+<a href="artists.html">Artists</a>
+<a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
 </header>
 
-<section style="padding:50px;text-align:center;">
-<h1>Our Artists</h1>
-<p>Verified hand-made artists</p>
+<section class="section">
+<h2>Meet Our Artists</h2>
+<div class="cards">
+
+<div class="card">
+<img src="https://via.placeholder.com/150">
+<h3>Rahul Sharma</h3>
+<p>Pencil Portrait Specialist</p>
+<a class="btn" href="order.html">Order</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/150">
+<h3>Sneha Patil</h3>
+<p>Couple & Family Art</p>
+<a class="btn" href="order.html">Order</a>
+</div>
+
+</div>
 </section>
+
+<footer>
+<p>© 2026 ArtGift</p>
+</footer>
 
 </body>
 </html>
